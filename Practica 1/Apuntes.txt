@@ -1,0 +1,15 @@
+Transparencia 6:
+Como DES tiene 8 bytes (64 bits), usamos utf-8 para el encode
+
+Padding: consiste en rellenar espacio en un mensaje en caso de no terminar en la cantidad de bytes esperados
+Casi siempre usamos PKCS#5 o 7: usamos N paddings con el valor N
+Tenemos que hacer padding nosotros
+
+Para el modo CTR, usamos nonce como "IV", generando solo la primera mitad (64 de 128) --> nonce = get_random_bytes(8)
+
+MAC = Código de Autenticación de Mensaje. Ofrece una prueba de que nadie ha modificado ese mensaje
+
+Para el modo GCM, no usamos cipher, sino que usamos encrypt_and_digest, que devuelve el texto cifrado y la prueba de que los datos no se han modificado (mac_cifrado)
+Para desencriptarlo, usamos decrypt_and_verify(ciphertext, mac_cifrado)
+
+En la transparencia 18, si salta el la excepción significa que el mac no es correcto, por lo que alguien ha podido modificarlo. PARAMOS EL PROGRAMA

@@ -1,0 +1,6 @@
+Abro una terminal:	py bob.py
+	Se queda a la escucha
+Abro otra terminal: py alice.py
+	Ya sale el mensaje
+
+Para el segundo apartado lo mismo, pero descomento

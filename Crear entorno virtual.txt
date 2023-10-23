@@ -1,0 +1,5 @@
+virtualenv myenv
+myenv\Scripts\activate
+
+# Si no está instalado
+pip install pycryptodome

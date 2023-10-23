@@ -1,0 +1,12 @@
+cubos = [1, 2, 3, 4, 5]
+Kub = cubos(:)	Crear copia de lista
+kub(:2)	inicio..2		[1, 2]
+kub(2:)	2..fin		[3, 4, 5]
+
+conc = "simples"
+len(conc)
+conc(2:4)
+
+ord('A')	Devuelve el valor ASCII del caracter de entrada
+chr(65)	Devuelve el caracter asociado a ese valor ASCII
+

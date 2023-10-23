@@ -1,0 +1,1 @@
+No me funciona el terminal de VSC, tengo que abrir uno externo donde tenga los archivos
